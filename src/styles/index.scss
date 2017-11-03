@@ -1,0 +1,41 @@
+@import './variables';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    min-height: 100%;
+    position: relative;
+    overflow-x: auto;
+    display: flex;
+}
+
+.app > div {
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $ligth-green;
+}
+
+.questions {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $flint;
+}
